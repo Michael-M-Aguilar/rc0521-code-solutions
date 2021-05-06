@@ -4,6 +4,10 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   max-width: 800px;
   margin: auto;
@@ -20,13 +24,13 @@ p {
 }
 
 .column-dk {
-  width: 180%;
+  width: 120%;
 }
 
 .column-mario {
   width: 150%;
 }
 
-.image {
-  width: 100%;
+.column-image {
+  width: 80%;
 }

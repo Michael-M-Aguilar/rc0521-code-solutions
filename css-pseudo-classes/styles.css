@@ -8,11 +8,11 @@ button:hover {
   color: white;
 }
 
-thead {
-  background-color: black;
-  color: white;
-}
-
 tr:nth-child(odd) {
   background: rgb(230, 227, 227);
+}
+
+table.striped thead > tr {
+  color: white;
+  background-color: black;
 }

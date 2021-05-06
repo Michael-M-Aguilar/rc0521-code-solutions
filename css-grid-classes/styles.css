@@ -20,17 +20,13 @@ img {
 }
 
 .column-one-third {
-  width: 90%;
+  width: calc(100% / 3);
 }
 
-.column-dk {
-  width: 120%;
+.column-one-fourth {
+  width: 25%;
 }
 
-.column-mario {
-  width: 150%;
-}
-
-.column-image {
-  width: 80%;
+.column-two-third {
+  width: calc(200% / 3);
 }

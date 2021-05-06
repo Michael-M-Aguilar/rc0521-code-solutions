@@ -1,0 +1,32 @@
+h1,
+h2,
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.column-one-third {
+  width: 90%;
+}
+
+.column-dk {
+  width: 180%;
+}
+
+.column-mario {
+  width: 150%;
+}
+
+.image {
+  width: 100%;
+}

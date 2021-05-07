@@ -16,6 +16,7 @@ h3 {
   font-size: 20px;
   color: #7e7c7c;
   margin: 0 20px;
+  max-width: 95%;
 }
 
 button {
@@ -33,6 +34,10 @@ button {
   justify-content: center;
 }
 
+.container {
+  max-width: 80%;
+}
+
 .row {
   display: flex;
   flex-wrap: nowrap;
@@ -43,6 +48,7 @@ button {
 .column-header {
   font-family: 'Karla', 'Times New Roman', Times, serif;
   font-style: normal;
+  font-size: 20px;
   font-weight: 700;
   src: url(https://fonts.gstatic.com/s/karla/v7/qkBWXvYC6trAT7zuC8m5xLtlmgzD.woff2) format('woff2');
   unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd;
@@ -51,6 +57,7 @@ button {
 .column-text {
   font-family: 'Karla', 'Times New Roman', Times, serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
   src: url(https://fonts.gstatic.com/s/karla/v7/qkBWXvYC6trAT7zuC8m5xLtlmgzD.woff2) format('woff2');
   unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd;
@@ -66,7 +73,15 @@ button {
 }
 
 .child-p {
-  width: 60%;
+  width: 70%;
+  line-height: 1.5;
+
+  /* padding-right: 20px; */
+}
+
+img {
+  width: 125px;
+  padding-left: 20px;
 }
 
 /*

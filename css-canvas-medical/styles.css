@@ -1,0 +1,83 @@
+h2 {
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: flex-end;
+  justify-content: right;
+}
+
+.container {
+  max-width: 85%;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 12px;
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url('avenir.woff2') format('woff2');
+  color: #adadad;
+}
+
+.head-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  width: 1400px;
+}
+
+.contact-us,
+.get-started {
+  color: white;
+  background-color: #294464;
+}
+
+.contact-us {
+  height: 35px;
+  width: 120px;
+  font-size: 16px;
+}
+
+.get-started {
+  height: 50px;
+  width: 160px;
+  font-size: 20px;
+}
+
+.background {
+  background-image: url(images/hero.jpg);
+  width: 1200px;
+  height: 500px;
+}
+
+.heading {
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  src: url('avenir.woff2') format('woff2');
+  color: white;
+}
+
+.text-content {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.7;
+  src: url('TiemposHeadline-Regular.woff2') format('woff2');
+  color: white;
+}
+
+.row-3 {
+  margin-top: 20px;
+}
+
+.sub-row-3 {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 1400px;
+  background-color: #fafafa;
+}

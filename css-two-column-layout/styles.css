@@ -1,0 +1,81 @@
+h1,
+h3 {
+  font-family: 'Karla', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/karla/v7/qkBWXvYC6trAT7zuC8m5xLtlmgzD.woff2) format('woff2');
+  unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd;
+  text-align: center;
+}
+
+h1 {
+  font-size: 67px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #7e7c7c;
+  margin: 0 20px;
+}
+
+button {
+  border: 3px solid #e47e79;
+  color: #e47e79;
+  font-weight: 900;
+  background: white;
+  width: 170px;
+  height: 40px;
+}
+
+#center {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.column-header {
+  font-family: 'Karla', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/karla/v7/qkBWXvYC6trAT7zuC8m5xLtlmgzD.woff2) format('woff2');
+  unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd;
+}
+
+.column-text {
+  font-family: 'Karla', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://fonts.gstatic.com/s/karla/v7/qkBWXvYC6trAT7zuC8m5xLtlmgzD.woff2) format('woff2');
+  unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd;
+  color: #7e7c7c;
+}
+
+.column1,
+.column2,
+.column3,
+.column4 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.child-p {
+  width: 60%;
+}
+
+/*
+.image {
+  flex-direction: row;
+}
+
+.child-p {
+  flex-direction: row;
+  flex-wrap: nowrap;
+} */
+}

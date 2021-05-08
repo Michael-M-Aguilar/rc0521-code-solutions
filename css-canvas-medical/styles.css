@@ -67,6 +67,10 @@ hr {
   font-size: 20px;
 }
 
+.row-2 {
+  margin-top: 90px;
+}
+
 .background {
   background-image: url(images/hero.jpg);
   background-size: cover;
@@ -190,13 +194,16 @@ hr {
 
 .button-column {
   padding-right: 50px;
+  padding-top: 50px;
 }
 
 .row-5 {
   padding-top: 50px;
   width: 1600px;
   height: 500px;
+  max-width: 1600px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background: #525351;
 }
@@ -211,6 +218,8 @@ hr {
   font-family: 'Avenir', sans-serif;
   font-style: normal;
   font-weight: 300;
+  line-height: 1.9;
+  width: 210px;
   src: url('avenir.woff2') format('woff2');
   color: white;
   padding-top: 35px;
@@ -223,20 +232,20 @@ hr {
   src: url('avenir.woff2') format('woff2');
   color: whitesmoke;
   font-size: 18px;
-  margin: 50px 30px;
+  margin: 50px 0;
 }
 
 .column5 {
-  padding-left: 100px;
+  padding-left: 500px;
 }
 
 .column6 {
-  padding-right: 150px;
+  padding-right: 120px;
 }
 
 .foot-logo {
-  height: 28px;
-  width: 130px;
+  height: 24px;
+  width: 116px;
 }
 
 .row-6 {

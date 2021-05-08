@@ -9,9 +9,9 @@ h2 {
   max-width: 80%;
 }
 
-.head-logo {
+.logo {
   width: 140px;
-  height: 60px;
+  height: 40px;
 }
 
 .logo-header-div {
@@ -207,11 +207,6 @@ hr {
   width: 200px;
 }
 
-.foot-logo {
-  height: 30px;
-  width: 160px;
-}
-
 .personal-info {
   font-family: 'Avenir', sans-serif;
   font-style: normal;
@@ -237,6 +232,11 @@ hr {
 
 .column6 {
   padding-right: 150px;
+}
+
+.foot-logo {
+  height: 28px;
+  width: 130px;
 }
 
 .row-6 {

@@ -1,0 +1,41 @@
+p {
+  font-family: 'Barlow', sans-serif;
+  color: #747475;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 3000px;
+  background-color: #f7f8fa;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Barlow', sans-serif;
+  font-size: 36px;
+}
+
+.phone-row,
+.symbol-row,
+.title-row,
+.info-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title-row {
+  font-family: 'Barlow', sans-serif;
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+.info-row {
+  padding-bottom: 20px;
+  padding-left: 18px;
+}
+
+.symbol {
+  height: 110px;
+  width: 110px;
+}

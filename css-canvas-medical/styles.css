@@ -264,3 +264,24 @@ hr {
   font-size: 20px;
   margin: 50px 30px;
 }
+
+.product-man {
+  display: flex;
+  background-image: url(images/product/product-header.jpg);
+  background-size: cover;
+  width: 1300px;
+  height: 500px;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.header-man {
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  src: url('avenir.woff2') format('woff2');
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 28px;
+  color: white;
+  width: 500px;
+}

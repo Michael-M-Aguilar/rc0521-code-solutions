@@ -280,8 +280,29 @@ hr {
   font-style: normal;
   src: url('avenir.woff2') format('woff2');
   margin-top: 40px;
-  font-weight: 400;
-  font-size: 28px;
+  font-weight: 490;
+  font-size: 36px;
   color: white;
   width: 500px;
+}
+
+.text-content-man {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.7;
+  font-size: 20px;
+  src: url('TiemposHeadline-Regular.woff2') format('woff2');
+  color: rgb(255, 254, 254);
+  width: 680px;
+  margin-bottom: 20px;
+}
+
+.command-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.command-column {
+  display: flex;
 }

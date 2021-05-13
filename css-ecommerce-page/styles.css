@@ -1,0 +1,74 @@
+h1,
+p {
+  font-family: 'DM Sans', sans-serif;
+  font-display: swap;
+}
+
+h1 {
+  font-size: 42px;
+  padding-left: 170px;
+}
+
+p {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+img {
+  width: 370px;
+  height: 600px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1780px;
+}
+
+.image-row {
+  width: 2100px;
+  margin-left: 20px;
+}
+
+.item-price {
+  display: flex;
+  justify-content: space-evenly;
+  width: 2000px;
+}
+
+.item-name {
+  display: flex;
+  justify-content: space-between;
+  width: 2000px;
+}
+
+.column1,
+.column2,
+.column3,
+.column4,
+.column5 {
+  display: flex;
+  padding-left: 10px;
+  flex-basis: calc(100% / 5);
+}
+
+.highlight {
+  background-color: rgba(250, 244, 191, 0.87);
+  height: 18px;
+}
+
+.cross {
+  text-decoration: line-through;
+  color: rgb(214, 213, 213);
+  padding-left: 6px;
+  margin-right: 15px;
+}
+
+.padding {
+  color: rgb(214, 213, 213);
+  padding-left: 8px;
+}
+
+.feature {
+  padding-right: 20px;
+}

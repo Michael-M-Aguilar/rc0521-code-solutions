@@ -1,7 +1,7 @@
 /* exported getIndexes */
 function getIndexes(array) {
   var indexes = [];
-  for (const i in array) {
+  for (var i = 0; i < array.length; i++) {
     indexes.push(i);
   }
   return indexes;

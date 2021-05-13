@@ -268,11 +268,9 @@ hr {
 .product-man {
   display: flex;
   background-image: url(images/product/product-header.jpg);
-  background-size: cover;
-  width: 1300px;
-  height: 500px;
-  padding-left: 50px;
-  padding-top: 50px;
+  background-size: contain;
+  width: 1190px;
+  height: 670px;
 }
 
 .header-man {
@@ -284,6 +282,10 @@ hr {
   font-size: 36px;
   color: white;
   width: 500px;
+}
+
+.center {
+  align-self: center;
 }
 
 .text-content-man {
@@ -301,8 +303,35 @@ hr {
 .command-row {
   display: flex;
   justify-content: space-evenly;
+  background-color: #fafafade;
+  width: 1600px;
 }
 
 .command-column {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  padding-left: 50px;
+}
+
+.command-header {
+  font-size: 35px;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url('TiemposHeadline-Regular.woff2') format('woff2');
+  color: #50504b;
+}
+
+.command-content {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  src: url('TiemposHeadline-Regular.woff2') format('woff2');
+  line-height: 1.7;
+}
+
+.italic {
+  font-style: italic;
 }

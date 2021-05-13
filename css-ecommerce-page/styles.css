@@ -22,26 +22,24 @@ img {
 .header {
   display: flex;
   justify-content: space-evenly;
-  width: 2000px;
+  width: 1780px;
 }
 
 .image-row {
-  display: flex;
-  justify-content: space-between;
-  width: 2060px;
+  width: 2100px;
+  margin-left: 20px;
 }
 
-/* .item-name, */
 .item-price {
   display: flex;
-  justify-content: space-between;
-  width: 1900px;
+  justify-content: space-evenly;
+  width: 2000px;
 }
 
 .item-name {
-  width: 1900px;
   display: flex;
   justify-content: space-between;
+  width: 2000px;
 }
 
 .column1,
@@ -51,6 +49,7 @@ img {
 .column5 {
   display: flex;
   padding-left: 10px;
+  flex-basis: calc(100% / 5);
 }
 
 .highlight {
@@ -70,23 +69,6 @@ img {
   padding-left: 8px;
 }
 
-/* .ysl-pad {
-  padding-left: 10px;
-} */
-
-/* .tiff-pad {
-  padding-right: 50px;
-} */
-
-/* .lv-pad {
-  padding-left: 100px;
-} */
-
-/* .reform-pad {
-  padding-left: 120px;
-} */
-
-/* .os-pad {
-  color: rgb(214, 213, 213);
-  margin-right: 60px;
-} */
+.feature {
+  padding-right: 20px;
+}

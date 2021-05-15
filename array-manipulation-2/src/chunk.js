@@ -1,22 +1,27 @@
 /* exported chunk */
 function chunk(array, size) {
-  var arrayed = [];
-  if (array === []) {
-    return arrayed;
-  } else {
-    for (var i = 0; i < array.length; i++) {
-      for (var j = 0; j < array.length; j += size) {
-        var sizeArray = [];
-
-        // var part1 = array.slice(0, i);
-        // arrayed.push(part1);
-        // var part2 = array.slice(i, j + 1);
-        // arrayed.push(part2);
-      }
-    }
+  var answer = [];
+  for (var i = 0; i < array.length; i += size) {
+    var temp = array.slice(i, i + size);
+    answer.push(temp);
   }
-  return sizeArray;
+  return answer;
 }
+//   var arrayed = [];
+//   if (array === []) {
+//     return arrayed;
+//   } else {
+//     for (var i = 0; i < array.length; i++) {
+//       for (var j = i += size; j < array.length; j += size) {
+//         var part1 = array.slice(0, i);
+//         arrayed.push(part1);
+//         var part2 = array.slice(i, j + 1);
+//         arrayed.push(part2);
+//       }
+//     }
+//   }
+//   return arrayed;
+// }
 // // make my empty array
 // var arrayOnly = [];
 // // make my lastIndex

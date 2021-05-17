@@ -6,7 +6,7 @@ function clicker(event) {
   counter++;
   $clickCounter.textContent = $clickCounter.textContent.replace(counter - 1, counter);
   if (counter < 4) {
-    $hotButton.ClassName = 'hot-button cold';
+    $hotButton.className = 'hot-button cold';
   } else if (counter < 7) {
     $hotButton.className = 'hot-button cool';
   } else if (counter < 10) {

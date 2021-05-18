@@ -268,8 +268,8 @@ hr {
 .product-man {
   display: flex;
   background-image: url(images/product/product-header.jpg);
-  background-size: contain;
-  width: 1190px;
+  background-size: cover;
+  width: 1290px;
   height: 670px;
 }
 
@@ -301,10 +301,11 @@ hr {
 }
 
 .command-row {
+  margin-top: 60px;
   display: flex;
   justify-content: space-evenly;
   background-color: #fafafade;
-  width: 1600px;
+  width: 1400px;
 }
 
 .command-column {
@@ -334,4 +335,11 @@ hr {
 
 .italic {
   font-style: italic;
+}
+
+.population-row {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 1400px;
 }

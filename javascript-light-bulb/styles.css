@@ -1,0 +1,32 @@
+.circleOff {
+  height: 1200px;
+  width: 1200px;
+  background-color: rgb(39, 39, 39);
+  border-radius: 50%;
+}
+
+.containerOff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 6000px;
+  height: 5000px;
+}
+
+.circleOn {
+  height: 1200px;
+  width: 1200px;
+  background-color: rgb(240, 241, 136);
+  border-radius: 50%;
+  box-shadow: rgb(244, 247, 99);
+}
+
+.containerOn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 240, 220);
+  width: 6000px;
+  height: 5000px;
+}

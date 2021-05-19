@@ -266,6 +266,7 @@ hr {
 }
 
 .product-man {
+  margin-top: 140px;
   display: flex;
   background-image: url(images/product/product-header.jpg);
   background-size: cover;
@@ -301,7 +302,7 @@ hr {
 }
 
 .command-row {
-  margin-top: 60px;
+  margin-top: 80px;
   display: flex;
   justify-content: space-evenly;
   background-color: #fafafade;
@@ -317,6 +318,7 @@ hr {
 }
 
 .command-header {
+  padding-left: 5px;
   font-size: 35px;
   font-family: 'Tiempos Headline', sans-serif;
   font-style: normal;
@@ -341,5 +343,10 @@ hr {
   margin-top: 60px;
   display: flex;
   justify-content: space-evenly;
+  width: 1400px;
+}
+
+.performance-row {
+  display: flex;
   width: 1400px;
 }

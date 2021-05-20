@@ -1,7 +1,17 @@
-// var $form = document.querySelector('#contact-form');
+var $form = document.querySelector('#contact-form');
 
-// $form.addEventListener('submit', preventDefault(event){
-//   event.preventDefault();
+function handleSubmit(event) {
+  event.preventDefault();
+  var formName = $form.name.value;
+  var formEmail = $form.email.value;
+  var formMessage = $form.message.value;
+  var formData = {
+    name: formName,
+    email: formEmail,
+    message: formMessage
+  };
+  console.log('formData: ', formData);
+  $form.reset();
+}
 
-//   document.getElementById('contact-form').reset();
-// })
+$form.addEventListener('submit', handleSubmit);

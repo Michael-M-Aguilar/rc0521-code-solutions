@@ -1,18 +1,26 @@
 /* exported defaults */
 function defaults(target, source) {
   var object = {};
-  var targetValues = Object.keys(target);
-  var sourceValues = Object.keys(source);
-  for (var i = 0; i < targetValues.length; i++) {
-    for (var j = 0; j < sourceValues.length; i++) {
-      if (targetValues[i] !== sourceValues[i]) {
-        object = object[sourceValues[i]];
+
+  if (Object.keys(target).length === 0) {
+    for (var key in source) {
+      target[key] = source[key];
+    }
+  }
+
+  for (var x in source) {
+    object[x] = source[x];
+  }
+
+  for (var targ in target) {
+    for (var def in object) {
+      if (targ === def) {
+        delete object[def];
       }
     }
   }
-  // for(var k in object {
-  //   if (object[k] === undefined) {
-  //     delete object[k]
-  //   }
-  // }
+
+  for (var a in object) {
+    target[a] = object[a];
+  }
 }

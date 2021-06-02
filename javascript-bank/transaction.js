@@ -1,9 +1,6 @@
 /* exported Transaction */
-function transaction(type, amount) {
+function Transaction(type, amount) {
   this.type = type;
   this.amount = amount;
+  return (type, amount);
 }
-
-transaction.prototype.returnValues = function () {
-  return '(' + this.type + ' ' + this.amount + ')';
-};

@@ -1,0 +1,26 @@
+img {
+  height: 300px;
+  width: 300px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  align-self: center;
+}
+
+.fa-arrow-right {
+  padding-left: 100px;
+}
+
+.fa-arrow-left {
+  padding-right: 100px;
+}
+
+.fa-circle {
+  padding-left: 5px;
+  padding-right: 5px;
+}

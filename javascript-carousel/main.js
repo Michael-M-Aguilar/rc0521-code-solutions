@@ -28,6 +28,36 @@ var images = [
 // set a counter, where if it reaches a number, a certain image will show up?
 var counter = 0;
 
+function scrollLeft() {
+  if (counter === 0) {
+    counter = 5;
+  }
+  counter--;
+  $rotation.setAttribute('src', images[counter].src);
+  $rotation.setAttribute('alt', images[counter].alt);
+
+  if ($allCircles[4].className === 'fas fa-circle') {
+    $allCircles[4].className = 'far fa-circle';
+    $allCircles[3].className = 'fas fa-circle';
+  } else if ($allCircles[3].className === 'fas fa-circle') {
+    $allCircles[3].className = 'far fa-circle';
+    $allCircles[2].className = 'fas fa-circle';
+  } else if ($allCircles[2].className === 'fas fa-circle') {
+    $allCircles[2].className = 'far fa-circle';
+    $allCircles[1].className = 'fas fa-circle';
+  } else if ($allCircles[1].className === 'fas fa-circle') {
+    $allCircles[1].className = 'far fa-circle';
+    $allCircles[0].className = 'fas fa-circle';
+  } else if ($allCircles[0].className === 'fas fa-circle') {
+    $allCircles[0].className = 'far fa-circle';
+    $allCircles[4].className = 'fas fa-circle';
+  }
+}
+// An event listener when you scroll left.
+$leftArrow.addEventListener('click', function (event) {
+  scrollLeft();
+});
+
 function scrollRight() {
   counter++;
   // once it hits the last image, reset
@@ -37,42 +67,28 @@ function scrollRight() {
   // When the counter reaches a certain number, it will set the new image class equal to that src/alt values.
   $rotation.setAttribute('src', images[counter].src);
   $rotation.setAttribute('alt', images[counter].alt);
-  // console.log($allCircles[i]);
-  // console.log(images[counter]);
-  // how to change the circles to be the dark filled in ones?
-  for (var i = 0; i < $allCircles.length; i++) {
-    if ($allCircles[i].className !== 'far fa-circle') {
-      $allCircles.className = 'far fa-circle';
-      $allCircles[i].className = 'fas fa-circle';
-    } else {
-      $allCircles.className = 'far fa-circle';
-      $allCircles[i].className = 'fas fa-circle';
-    }
-  }
 
-  // for (var i = 0; i < $allCircles.length; i++) {
-  //   if ($allCircles[i] === images[counter].src) {
-  //     $allCircles[i].className = 'fas fa-circle';
-  //   } else {
-  //     $allCircles[i].className = 'far fa-circle';
-  //   }
-  // }
+  if ($allCircles[0].className === 'fas fa-circle') {
+    $allCircles[0].className = 'far fa-circle';
+    $allCircles[1].className = 'fas fa-circle';
+  } else if ($allCircles[1].className === 'fas fa-circle') {
+    $allCircles[1].className = 'far fa-circle';
+    $allCircles[2].className = 'fas fa-circle';
+  } else if ($allCircles[2].className === 'fas fa-circle') {
+    $allCircles[2].className = 'far fa-circle';
+    $allCircles[3].className = 'fas fa-circle';
+  } else if ($allCircles[3].className === 'fas fa-circle') {
+    $allCircles[3].className = 'far fa-circle';
+    $allCircles[4].className = 'fas fa-circle';
+  } else if ($allCircles[4].className === 'fas fa-circle') {
+    $allCircles[4].className = 'far fa-circle';
+    $allCircles[0].className = 'fas fa-circle';
+  }
 }
+
 // An event listener when you scroll right.
 $rightArrow.addEventListener('click', function (event) {
   scrollRight();
 });
 
 // Uses previous counter var. Will help scroll left in the arrows.
-function scrollLeft() {
-  counter--;
-  if (counter === 0) {
-    counter = 5;
-  }
-  $rotation.setAttribute('src', images[counter].src);
-  $rotation.setAttribute('alt', images[counter].alt);
-}
-// An event listener when you scroll left.
-$leftArrow.addEventListener('click', function (event) {
-  scrollLeft();
-});

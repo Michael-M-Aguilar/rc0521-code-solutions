@@ -1,0 +1,30 @@
+/* make the images a bit smaller */
+img {
+  height: 300px;
+  width: 300px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+/* To assure arrows are centered horizontally to the image */
+.arrow {
+  align-self: center;
+}
+
+/* These two are to give some padding between the arrows and the image */
+.fa-arrow-right {
+  padding-left: 100px;
+}
+
+.fa-arrow-left {
+  padding-right: 100px;
+}
+
+/* Give some spacing between the circles. */
+.fa-circle {
+  padding-left: 5px;
+  padding-right: 5px;
+}

@@ -48,14 +48,22 @@
       }
     ];
 
-    const { title: title3, author: author3, libraryID: library3 } = library[0];
-    const { title: title4, author: author4, libraryID: library4 } = library[1];
-    const { title: title5, author: author5, libraryID: library5 } = library[2];
-    const { title: title6, author: author6, libraryID: library6 } = library[3];
-    console.log('book3: ', library[0]);
-    console.log('book4: ', library[1]);
-    console.log('book5: ', library[2]);
-    console.log('book6: ', library[3]);
+    const [
+  book3,
+  book4,
+  book5
+    ] = library;
+console.log('book 3: ', book3);
+console.log('book 4: ', book4);
+console.log('book 5: ', book5);
+
+const [
+  ,
+  ,
+  ,
+  book6
+] = library;
+console.log('book 6: ', book6);
   </script>
 </body>
 </html>

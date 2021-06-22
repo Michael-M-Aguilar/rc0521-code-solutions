@@ -1,0 +1,94 @@
+  210  git checkout -b command-line-basics
+  211  git status
+  212  cd ~/repos/rc0521-code-solutions/
+  213  ls
+  214  git checkout command-line-basics
+  215  pwd
+  216  ls
+  217  git status
+  218  cd command-line-basics/
+  219  man man
+  220  man cat
+  221  cat print laziness.txt
+  222  cat print impatience.txt
+  223  cat print hubris.txt
+  224  cat print laziness.txt impatience.txt
+  225  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  226  cat three-virtues.txt
+  227  man ls
+  228  ls -d
+  229  ls -a
+  230  man ls
+  231  ls lfz-staff/
+  232  ls -aF lfz-staff > lfz-staff/contents.txt
+  233  ls -a lfz-staff
+  234  ls -F lfz-staff
+  235  ls -aF lfz-staff > lfz-staff/contents.txt
+  236  cat lfz-staff/contents.txt
+  237  man pwd
+  238  pwd
+  239  pwd > i-was-here.txt
+  240  man echo
+  241  echo 'Hello, World!'
+  242  echo 'Hello World!' > hello.txt
+  243  ls
+  244  cat hello.txt
+  245  man touch
+  246  touch tag-youre-it.txt
+  247  touch boop.txt
+  248  touch snoot/ boop.txt
+  249  touch boop.txt
+  250  touch boop.txt > snoot/
+  251  ls
+  252  man touch
+  253  pwd
+  254  ls snoot
+  255  ls snoot/
+  256  ls lfz-staff/
+  257  ls /snoot
+  258  ls snoot/
+  259  ls pokiemans/
+  260  pwd
+  261  ls
+  262  ls snoot/
+  263  ls kill-me/
+  264  man mkdir
+  265  mkdir parent
+  266  ls
+  267  ls parent/
+  268  mkdir -p parent/child/grandchild
+  269  touch .gitkeep
+  270  touch a.gitkeep > parent/child/grandchild
+  271  touch a.gitkeep
+  272  touch a.gitkeep
+  273  touch .gitkeep/parent/child/grandchild
+  274  touch .gitkeep > parent/child/grandchild
+  275  ls
+  276  cd parent
+  277  touch .gitkeep
+  278  cd ~/repos/rc0521-code-solutions/command-line-basics/
+  279  ls -a
+  280  cd parent
+  281  ls -a
+  282  cd ~/repos/rc0521-code-solutions/command-line-basics/
+  283  man mv
+  284  mv pokiemans > pokemon
+  285  man mv
+  286  mv rename pokemans
+  287  mv pokiemans
+  288  mv pokiemans pokemon
+  289  ls
+  290  man rm
+  291  rm lol.txt
+  292  ls
+  293  rm -r kill-me/
+  294  ls
+  295  man cp
+  296  cp and-then.txt no-and-then.txt
+  297  ls
+  298  cd command-line-basics
+  299  cat and-then.txt
+  300  cat no-and-then.txt
+  301  man history
+  302  history
+  303  history > command-history.txt

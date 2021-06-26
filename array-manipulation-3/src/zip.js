@@ -1,9 +1,20 @@
 /* exported zip */
-var test = [];
-function zip(first, second) {
-  for (var i = 0; i < first.length; i++) {
-    if (first[i] === second[i]) {
-      return test.push(first[i]);
-    }
+const zip = (first, second) => {
+  let minString = first.length;
+
+  if (first.length < second.length) {
+    minString = first.length;
+  } else if (first.length > second.length) {
+    minString = second.length;
   }
-}
+
+  let tempArray = [];
+  const answerArray = [];
+  for (var i = 0; i < minString; i++) {
+    tempArray.push(first[i]);
+    tempArray.push(second[i]);
+    answerArray.push(tempArray);
+    tempArray = [];
+  }
+  return answerArray;
+};

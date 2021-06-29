@@ -12,8 +12,8 @@ app.get('/api/grades', (req, res) => {
   res.json(array);
 });
 
-const JSON = express.json();
-app.use(JSON);
+const jsonMiddleware = express.json();
+app.use(jsonMiddleware);
 
 app.post('/api/grades', (req, res) => {
   grades[nextId] = req.body;

@@ -48,6 +48,50 @@ app.post('/api/notes', (req, res) => {
   }
 });
 
+// User can delete post
+app.delete('/api/notes/:id', (req, res) => {
+  const id = req.params.id;
+  if (id < 0) {
+    res.status(400).json({ error: 'id must be a positive integer' });
+  } else if (!data.notes[id]) {
+    res.status(404).json({ error: `Cannot find note with id ${id}` });
+  } else {
+    delete data.notes[id];
+
+    const dataJSON = JSON.stringify(data, null, 2);
+    fs.writeFile('./data.json', dataJSON, 'utf8', err => {
+      if (err) {
+        throw res.status(500).json({ error: 'An unexpected error occured.' });
+      } else {
+        res.status(204).json(data.notes[id]);
+      }
+    });
+  }
+});
+
+// User can do a put request
+app.put('/api/notes/:id', (req, res) => {
+  const id = req.params.id;
+  if (id < 0) {
+    res.status(400).json({ error: 'Please insert a positive integer ' });
+  } else if (!req.body.content) {
+    res.status(400).json({ error: 'content requires a field ' });
+  } else if (!data.notes[id]) {
+    res.status(404).json({ error: `cannot find note with id ${id}` });
+  } else {
+    data.notes[id] = req.body;
+    data.notes[id].id = id;
+
+    const dataJSON = JSON.stringify(data, null, 2);
+    fs.writeFile('./data.json', dataJSON, 'utf8', err => {
+      if (err) {
+        throw res.status(500).json({ error: 'An unexpected error occured' });
+      } else {
+        res.status(200).json(data.notes[id]);
+      }
+    });
+  }
+});
 // Ability to listen in our server.
 app.listen(3000, () => {
   // eslint-disable-next-line no-console

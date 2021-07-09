@@ -1,0 +1,42 @@
+.rendered {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 85px;
+}
+
+.buttonUnclicked {
+  width: 34px;
+  height: 20px;
+  border-radius: 8px;
+}
+
+.buttonClicked {
+  width: 34px;
+  height: 20px;
+  border-radius: 8px;
+  background-color: rgb(68, 238, 77);
+}
+
+.circle {
+  position: absolute;
+  top: 7.5px;
+  left: 14px;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.circleClicked {
+  position: absolute;
+  top: 7.5px;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: inline-block;
+}

@@ -1,0 +1,33 @@
+.buttonSize {
+  font-size: 1.5rem;
+  height: 50px;
+  width: 175px;
+  border: 5px solid black;
+}
+
+.firstButton {
+  background-color: #21124a;
+  color: #fff;
+}
+
+.secondButton {
+  background-color: #674ea7;
+  color: #fff;
+}
+
+.thirdButton {
+  background-color: #e06666;
+  color: #fff;
+}
+
+.fourthButton {
+  background-color: #f6b26b;
+}
+
+.fifthButton {
+  background-color: #fefe80;
+}
+
+.sixthButton {
+  background-color: #fff;
+}

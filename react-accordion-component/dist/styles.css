@@ -1,36 +1,28 @@
-.showThis {
+.htmlOn,
+.cssOn,
+.jsOn {
   display: block;
   background-color: white;
   border: 2px solid black;
   max-width: 15rem;
 }
 
-.hideThis {
+.jsOn {
+  transform: translateY(9px);
+}
+
+.htmlOff,
+.cssOff,
+.jsOff {
   display: none;
 }
 
-/* h3 {
-  /* border: 2px solid black; */
-
-/* background-color: #8b89895b; */
-
-/* max-width: 15rem;
-margin: 0; */
-
-.tab {
+.htmlTab,
+.cssTab,
+.jsTab {
   border: 2px solid black;
   max-width: 15rem;
-  height: 3rem;
+  height: 4rem;
   margin: 0;
   background-color: #8b89895b;
 }
-
-/* .tabOthers {
-  transform: translateY(190px);
-  border: 2px solid black;
-  max-width: 15rem;
-  height: 3rem;
-  padding-top: 20px;
-  margin: 0;
-  background-color: #8b89895b;
-} */

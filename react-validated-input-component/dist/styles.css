@@ -1,0 +1,13 @@
+.spacing {
+  display: flex;
+  justify-content: space-between;
+  max-width: 220px;
+}
+
+input {
+  border: 3px solid black;
+}
+
+p {
+  color: red;
+}

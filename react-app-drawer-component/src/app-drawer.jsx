@@ -11,13 +11,15 @@ export default class AppDrawer extends React.Component {
   }
 
   handleClick() {
-    this.setState(prevState => ({
-      isSatisfied: !prevState.isSatisfied
-    }));
+    if (event.target.className === 'fas fa-bars fa-2x') {
+      this.setState(prevState => ({
+        isSatisfied: !prevState.isSatisfied
+      }));
+    }
   }
 
   handleClickWhenOn() {
-    if (event.target.className === 'modalOn') {
+    if (event.target.className === 'modalOn' || event.target.className === 'choice') {
       this.setState(prevState => ({
         isSatisfied: !prevState.isSatisfied
       }));
@@ -48,10 +50,10 @@ export default class AppDrawer extends React.Component {
         </div>
         <div id="modal" className={this.modalOff()} onClick={this.handleClickWhenOn}>
           <div className="modalContent">
-            <h2>Menu</h2>
-            <h4>About</h4>
-            <h4>Get Started</h4>
-            <h4>Sign In</h4>
+            <h2 className="choice">Menu</h2>
+            <h4 className="choice">About</h4>
+            <h4 className="choice">Get Started</h4>
+            <h4 className="choice">Sign In</h4>
           </div>
         </div>
       </div>

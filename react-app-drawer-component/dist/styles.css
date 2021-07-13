@@ -1,0 +1,35 @@
+#modal {
+  transition-duration: 500ms;
+}
+
+.modalOff {
+  transform: translateX(-12rem);
+  transition-duration: 500ms;
+}
+
+.modalOn {
+  /* display: absolute; */
+  transition-duration: 500ms;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1a19196c;
+}
+
+.modalContent {
+  transition-duration: 400ms;
+  background-color: #fefefe;
+  width: 150px;
+  height: 100vh;
+}
+
+h2,
+h4 {
+  margin: 0;
+  padding-top: 28px;
+}
+
+h2:hover,
+h4:hover {
+  background-color: #443f3f26;
+}

@@ -1,0 +1,19 @@
+.modalOff {
+  transition: all margin-right 2s;
+  display: none;
+}
+
+.modalOn {
+  transition: all margin-left 2s;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+  transition: all margin-left 2s;
+  background-color: #fefefe;
+  width: 220px;
+  height: 100vh;
+}

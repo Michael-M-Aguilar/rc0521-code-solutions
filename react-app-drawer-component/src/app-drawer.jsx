@@ -18,7 +18,7 @@ export default class AppDrawer extends React.Component {
     }
   }
 
-  handleClickWhenOn() {
+  handleClickWhenOn(e) {
     if (event.target.className === 'modalOn' || event.target.className === 'choice') {
       this.setState(prevState => ({
         isSatisfied: !prevState.isSatisfied
@@ -34,7 +34,7 @@ export default class AppDrawer extends React.Component {
     }
   }
 
-  closeModal() {
+  closeModal(e) {
     if (event.target.className === 'modalOn') {
       return 'modalOff';
     } else {

@@ -10,8 +10,8 @@ export default class AppDrawer extends React.Component {
     this.handleClickWhenOn = this.handleClickWhenOn.bind(this);
   }
 
-  handleClick() {
-    if (event.target.className === 'fas fa-bars fa-2x') {
+  handleClick(e) {
+    if (e.target.className === 'fas fa-bars fa-2x') {
       this.setState(prevState => ({
         isSatisfied: !prevState.isSatisfied
       }));
@@ -19,7 +19,7 @@ export default class AppDrawer extends React.Component {
   }
 
   handleClickWhenOn(e) {
-    if (event.target.className === 'modalOn' || event.target.className === 'choice') {
+    if (e.target.className === 'modalOn' || e.target.className === 'choice') {
       this.setState(prevState => ({
         isSatisfied: !prevState.isSatisfied
       }));
@@ -35,7 +35,7 @@ export default class AppDrawer extends React.Component {
   }
 
   closeModal(e) {
-    if (event.target.className === 'modalOn') {
+    if (e.target.className === 'modalOn') {
       return 'modalOff';
     } else {
       return 'modalOn';

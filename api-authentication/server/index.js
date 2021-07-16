@@ -58,7 +58,6 @@ WHERE "username" = $1
   db.query(sql, params)
     .then(result => {
       const [user] = result.rows;
-      res.status(201).json(user);
       if (!user) {
         throw new ClientError(401, "'invalid login' error.");
       } else {
@@ -73,7 +72,7 @@ WHERE "username" = $1
                 username: username
               };
               const token = jwt.sign(payload, process.env.TOKEN_SECRET);
-              res.status(200).json(token);
+              res.status(200).json({ token: token, user: payload });
             }
           })
           .catch(err => next(err));

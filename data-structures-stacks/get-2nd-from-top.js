@@ -12,15 +12,12 @@ function get2ndFromTop(stack) {
     top = stack.pop();
   }
   // if next card after top is still not undefined, take second.
-  if (top.peek() !== undefined) {
+  if (stack.peek() !== undefined) {
     second = stack.pop();
   }
   // push second
-  if (second.peek() !== undefined) {
+  if (second.peek() !== undefined && top.peek() !== undefined) {
     stack.push(second);
-  }
-  // push first
-  if (top !== undefined) {
     stack.push(top);
   }
   return second;

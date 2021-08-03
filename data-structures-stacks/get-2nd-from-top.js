@@ -3,10 +3,6 @@
 function get2ndFromTop(stack) {
   let top;
   let second;
-  // for if the stack is empty, return undefined.
-  if (stack.peek() === undefined) {
-    return undefined;
-  }
   // Take most top, store it into top.
   if (stack.peek() !== undefined) {
     top = stack.pop();

@@ -18,17 +18,13 @@ app.get('/api/grades', (req, res) => {
 
   db.query(sql)
     .then(result => {
-      const array = [];
-      for (var i = 0; i < result.rows.length; i++) {
-        array.push(result.rows[i]);
-      }
       const grade = result.rows;
-      if (!grade[0]) {
+      if (!grade.length) {
         res.status(404).json({
           error: 'Cannot find grade any rows'
         });
       } else {
-        res.json(array);
+        res.json(grade);
       }
     })
     .catch(err => {
@@ -37,6 +33,44 @@ app.get('/api/grades', (req, res) => {
       res.status(500).json({ error: 'An unexpected error occured.' });
     });
 });
+
+app.get('/api/grades/:gradeId', (req, res, next) => {
+  const gradeId = parseInt(req.params.gradeId, 10);
+  if (!Number.isInteger(gradeId) || gradeId <= 0) {
+    res.status(400).json({
+      error: '"gradeId" must be a positive integer'
+    });
+    return;
+  }
+  const sql = `
+    select "gradeId",
+           "name",
+           "course",
+           "score",
+           "createdAt"
+      from "grades"
+     where "gradeId" = $1
+     `;
+  const params = [gradeId];
+  db.query(sql, params)
+    .then(result => {
+      const grade = result.rows[0];
+      if (!grade) {
+        res.status(404).json({
+          error: `Cannot find grade with "gradeId" ${gradeId}`
+        });
+      } else {
+        res.json(grade);
+      }
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(500).json({
+        error: 'An unexpected error occurred.'
+      });
+    });
+});
+
 // Ability to post a new row
 app.post('/api/grades', (req, res) => {
   if (!req.body.name || !req.body.course || !req.body.score) {
@@ -86,18 +120,12 @@ app.put('/api/grades/:gradeId', (req, res) => {
 
 app.delete('/api/grades/:gradeId', (req, res) => {
   const gradeId = parseInt(req.params.gradeId, 10);
-  if (!gradeId) {
-    res.status(400).json({ error: 'Please insert a valid gradeId' });
-  } else if (req.body.score < 0 || req.body.score > 100) {
-    res.status(404).json({ error: 'Invalid score. Must be between 0 and 100.' });
-  }
-
   const sql = `DELETE FROM "grades"
                      WHERE "gradeId" = $1;`;
   const params = [gradeId];
   db.query(sql, params)
     .then(result => {
-      res.status(204).json(req.body);
+      res.sendStatus(204).json(req.body);
     })
     .catch(err => {
     // eslint-disable-next-line no-console

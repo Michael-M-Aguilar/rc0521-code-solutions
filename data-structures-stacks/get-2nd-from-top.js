@@ -3,7 +3,7 @@
 function get2ndFromTop(stack) {
   let top;
   let second;
-  // for if the stack is empty.
+  // for if the stack is empty, return undefined.
   if (stack.peek() === undefined) {
     return undefined;
   }
@@ -15,9 +15,11 @@ function get2ndFromTop(stack) {
   if (stack.peek() !== undefined) {
     second = stack.pop();
   }
-  // push second
-  if (second.peek() !== undefined && top.peek() !== undefined) {
+  // push second, and then top.
+  if (second !== undefined) {
     stack.push(second);
+  }
+  if (top !== undefined) {
     stack.push(top);
   }
   return second;
